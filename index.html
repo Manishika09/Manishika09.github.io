@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Manishika Gupta | Portfolio</title>
   <link rel="stylesheet" href="style.css"/>
+  <link rel="icon" href="profile.jpg" type="image/jpg"/>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
   <header>
@@ -17,33 +20,48 @@
     </nav>
   </header>
 
-  <section id="about">
-  <h2>About Me</h2>
-  <img src="profile.jpg" alt="Manishika Gupta" style="width:150px; border-radius: 50%; margin-bottom: 10px;">
-  <p>I am a front-end enthusiast and a B.Tech CSE (AI & ML) student at VIT Bhopal, passionate about building clean and responsive web designs.</p>
-</section>
+  <section id="about" class="fade-in">
+    <h2>About Me</h2>
+    <img src="profile.jpg" alt="Manishika Gupta" class="profile-pic">
+    <p>I’m a 2nd-year B.Tech CSE (AI & ML) student at VIT Bhopal passionate about front-end development and UI/UX. I love building clean, responsive websites and user-focused designs.</p>
+    <a href="Manishika_Gupta_Resume.pdf" class="btn" download>Download Resume</a>
+  </section>
 
-
-  <section id="skills">
+  <section id="skills" class="fade-in">
     <h2>Skills</h2>
     <ul>
-      <li>HTML5</li>
-      <li>CSS3</li>
-      <li>JavaScript (Basic)</li>
-      <li>Figma, Canva</li>
+      <li>HTML5, CSS3, JavaScript (Basic)</li>
+      <li>Figma, Canva, GitHub, VS Code</li>
+      <li>Responsive Design, Wireframing, UI/UX</li>
+      <li>Communication, Creativity, Attention to Detail</li>
     </ul>
   </section>
 
-  <section id="projects">
+  <section id="projects" class="fade-in">
     <h2>Projects</h2>
-    <p>Portfolio Website – You're looking at it!</p>
-    <p>Real-Time Emotion Detection (AI + IoT) – <em>VIT Bhopal Team Project</em></p>
+    <div class="project-card">
+      <h3>Portfolio Website</h3>
+      <p>A responsive site to showcase my work, built using HTML, CSS & JavaScript.</p>
+    </div>
+    <div class="project-card">
+      <h3>AI + IoT Emotion Detection System</h3>
+      <p>Smart surveillance dashboard to detect emotions and threats in real time using AI, IoT & Python.</p>
+    </div>
   </section>
 
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email: gmanishika@gmail.com</p>
-    <p>Phone: 6386621999</p>
+  <section id="contact" class="fade-in">
+    <h2>Contact Me</h2>
+    <form action="https://formsubmit.co/gmanishika@gmail.com" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit" class="btn">Send</button>
+    </form>
+    <div class="social-icons">
+      <a href="https://github.com/Manishika09" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/manishika-gupta-a715812a4" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="mailto:gmanishika@gmail.com"><i class="fas fa-envelope"></i></a>
+    </div>
   </section>
 
   <footer>

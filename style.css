@@ -1,51 +1,86 @@
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
 body {
-  font-family: sans-serif;
-  background-color: #fdfdfd;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f9f9f9;
   color: #333;
   padding: 20px;
 }
-
 header {
   background: #222;
-  color: #fff;
+  color: white;
   padding: 20px;
   text-align: center;
 }
-
 nav a {
-  margin: 0 10px;
   color: #00d8ff;
+  margin: 0 10px;
   text-decoration: none;
 }
-
 section {
   margin: 40px 0;
 }
-
 h2 {
   color: #00bcd4;
   margin-bottom: 10px;
 }
-
-ul {
-  list-style-type: square;
-  margin-left: 20px;
+.profile-pic {
+  width: 150px;
+  border-radius: 50%;
+  margin-bottom: 10px;
 }
-
+ul {
+  margin-left: 20px;
+  list-style-type: square;
+}
+.project-card {
+  background: white;
+  border: 1px solid #ccc;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+form input, form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.btn {
+  background: #00bcd4;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+}
+.social-icons a {
+  font-size: 24px;
+  margin-right: 10px;
+  color: #333;
+}
 footer {
   text-align: center;
-  padding: 10px;
-  background: #222;
-  color: #fff;
   margin-top: 40px;
+  color: #fff;
+  background: #222;
+  padding: 10px;
 }
-
+.fade-in {
+  animation: fadeIn 1s ease-in;
+}
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
 @media (max-width: 600px) {
   nav {
     display: flex;
